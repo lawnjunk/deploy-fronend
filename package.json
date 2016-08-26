@@ -7,7 +7,7 @@
     "start": "node ./server.js",
     "heroku-postbuild": "./node_modules/webpack/bin/webpack.js",
     "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/karma/bin/karma start --browsers PhantomJS --single-run"
   },
   "keywords": [],
   "author": "",
@@ -40,6 +40,7 @@
     "karma-babel-preprocessor": "^6.0.1",
     "karma-chrome-launcher": "^1.0.1",
     "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1",
     "karma-webpack": "^1.8.0"
   }
 }
